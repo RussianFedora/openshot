@@ -1,0 +1,12 @@
+diff -urN openshot-1.2.2.orig/openshot/windows/preferences.py openshot-1.2.2/openshot/windows/preferences.py
+--- openshot-1.2.2.orig/openshot/windows/preferences.py	2010-11-09 15:39:42.980637947 +0300
++++ openshot-1.2.2/openshot/windows/preferences.py	2010-11-09 15:40:29.942598921 +0300
+@@ -231,7 +231,7 @@
+ 		"default_profile" : "DV NTSC",
+ 		"project_file_type" : "ascii",
+ 		"max_history_size" : "20",
+-		"melt_command" : "melt",
++		"melt_command" : "mlt-melt",
+ 		"blender_command" : "blender",
+ 		"output_mode" : "sdl",
+ 		}
