@@ -2,14 +2,14 @@
 
 Summary:	GNOME Non-linear video editor 
 Name:		openshot
-Version:	1.2.2
-Release:	3%{?dist}
+Version:	1.3.0
+Release:	1%{?dist}
 
 Group:		Applications/Multimedia
 License:	GPLv3
 URL:		http://www.openshotvideo.com
-Source0:	openshot-%{version}.tar.gz
-Patch0:		openshot-1.2.2-melt-command.patch
+Source0:	http://launchpad.net/openshot/1.3/1.3.0/+download/openshot-%{version}.tar.gz
+Patch0:		openshot-1.3.0-melt-command.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 
@@ -100,6 +100,10 @@ update-mime-database %{_datadir}/mime &> /dev/null || :
 
 
 %changelog
+* Tue Feb 15 2011 Arkady L. Shane <ashejn@yandex-team.ru> - 1.3.0-1
+- update to 1.3.0
+- update melt patch
+
 * Thu Nov 11 2010 Arkady L. Shane <ashejn@yandex-team.ru> - 1.2.2-3
 - really apply melt patch
 
